@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <time.h>
+
+main()
+{
+	int a, b;
+	
+	time_t currentTime;
+    time(&currentTime);
+    a=(currentTime/10000) % 10000;
+	b=14*a;
+	printf("%ld",b);
+}
